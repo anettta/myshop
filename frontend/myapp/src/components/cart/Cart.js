@@ -9,6 +9,7 @@ import { addItemToCart } from "../../actions/cartActions";
 const Cart = () => {
   const dispatch = useDispatch();
   const { cartItems } = useSelector((state) => state.cart);
+
   return (
     <Fragment>
       <MetaData title={"Your Cart"} />
