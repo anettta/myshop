@@ -14,6 +14,8 @@ import ProtectedRoute from "./components/route/ProtectedRoute";
 import UpdateProfile from "./components/user/UpdateProfile";
 import UpdatePassword from "./components/user/UpdatePassword";
 import ForgotPassword from "./components/user/ForgotPassword";
+import NewPassword from "./components/user/NewPassword";
+import Cart from "./components/cart/Cart";
 
 function App() {
   useEffect(() => {
@@ -27,11 +29,17 @@ function App() {
         <div className="container container-fluid">
           <Routes>
             <Route path="/" element={<Home />} exact />
+            <Route path="/cart" element={<Cart />} exact />
             <Route path="/search/:keyword" element={<Home />} />
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/password/forgot" element={<ForgotPassword />} exact />
+            <Route
+              path="/password/reset/:token"
+              element={<NewPassword />}
+              exact
+            />
             <Route
               path="/me"
               element={

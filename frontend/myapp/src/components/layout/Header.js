@@ -14,7 +14,7 @@ const Header = () => {
   const dispatch = useDispatch();
 
   const { user, loading } = useSelector((state) => state.auth);
-
+  const { cartItems } = useSelector((state) => state.cart);
   const logoutHandler = () => {
     dispatch(logoutUser());
     alert.success("Logged out successfully");
@@ -47,7 +47,7 @@ const Header = () => {
               &#xf07a;
             </i>
             <span className="badge" id="lblCartCount">
-              5
+              {cartItems.length}
             </span>
           </Link>
 
