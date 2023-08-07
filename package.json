@@ -25,7 +25,10 @@
     "validator": "^13.9.0"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.22.10",
+    "@babel/preset-react": "^7.22.5",
     "@expo/webpack-config": "^18.1.2",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "webpack-cli": "^5.1.4"
   }
 }
