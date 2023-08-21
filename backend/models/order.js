@@ -10,7 +10,7 @@ const orderSchema = mongoose.Schema({
       type: String,
       required: true,
     },
-    phoneNum: {
+    phoneNo: {
       type: Number,
       required: true,
     },
@@ -64,7 +64,7 @@ const orderSchema = mongoose.Schema({
   paidAt: {
     type: Date,
   },
-  itemPrice: {
+  itemsPrice: {
     type: Number,
     required: true,
     default: 0.0,

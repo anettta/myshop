@@ -18,6 +18,9 @@ app.use(
 );
 app.use(cookieParser());
 app.use(fileUpload());
+const dotenv = require("dotenv");
+// setting up config file
+dotenv.config({ path: "config.env" });
 
 // Import all routes
 const products = require("./routes/product");

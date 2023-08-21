@@ -45,7 +45,7 @@ const ConfirmOrder = () => {
             <b>Phone:</b> {shippingInfo.phoneNo}
           </p>
           <p className="mb-4">
-            <b>Address:</b>{" "}
+            <b>Address:</b>
             {`${shippingInfo.address}, ${shippingInfo.city}, ${shippingInfo.state},${shippingInfo.postalCode},  ${shippingInfo.country}`}
           </p>
 
@@ -66,8 +66,8 @@ const ConfirmOrder = () => {
 
                   <div className="col-4 col-lg-4 mt-4 mt-lg-0">
                     <p>
-                      {item.quantity} x {item.price} ={" "}
-                      <b>${item.quantity * item.price}</b>
+                      {item.quantity} x ${item.price} =
+                      <b>${(item.quantity * item.price).toFixed(2)}</b>
                     </p>
                   </div>
                 </div>
